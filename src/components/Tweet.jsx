@@ -1,33 +1,28 @@
+import User from "./User";
+import ProfileImage from "./ProfileImage";
+import Timestamp from "./Timestamp";
+import Actions from "./Actions";
+import Message from "./Message";
+
 function Tweet() {
   return (
     <div className="tweet">
-      <img
-        src="https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/ih_logo.jpeg"
-        className="profile"
-        alt="profile"
-      />
+      <ProfileImage image={url} />
 
       <div className="body">
         <div className="top">
-          <span className="user">
-            <span className="name">Ironhack</span>
-            <span className="handle">@ironhack</span>
-          </span>
+        <User name={name} handle={handle} />
 
-          <span className="timestamp">Nov 30, 2020</span>
+        <Timestamp time={timestamp} />
         </div>
 
         <p className="message">
-          On December 7th, we will be hosting a #webinar that will introduce you
-          to #SQL! Are you ready? 🚀
+        <Message message={message} />
         </p>
 
         <div className="actions">
           {/* Font Awesome icons */}
-          <i className="far fa-comment" data-testid="comment-icon"></i>
-          <i className="fas fa-retweet" data-testid="retweet-icon"></i>
-          <i className="far fa-heart" data-testid="heart-icon"></i>
-          <i className="fas fa-share" data-testid="share-icon"></i>
+          <Actions />
         </div>
       </div>
 
