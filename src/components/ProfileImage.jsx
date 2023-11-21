@@ -2,7 +2,7 @@
 
 const ProfileImage = (props) => {
     return (
-        <img src={props.url} className="profile" alt="profile" />
+        <img src={props.image} className="profile" alt="profile" />
     )
 }
 

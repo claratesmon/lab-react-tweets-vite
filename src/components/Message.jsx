@@ -1,6 +1,6 @@
 const Message = (props) => {
     return (
-        <p className="message"> {props.TWEET_MESSAGE }</p>
+        <p className="message"> {props.message}</p>
     )
 }
 

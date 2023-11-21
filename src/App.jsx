@@ -42,8 +42,8 @@ function App() {
   return (
     <div className="App">
       {
-        tweetsArray.map(tweet => {
-          return <Tweet tweet={tweet} />
+        tweetsArray.map((tweet) => {
+          return <Tweet tweetcontent={tweet} />
         })
       }
     </div>
